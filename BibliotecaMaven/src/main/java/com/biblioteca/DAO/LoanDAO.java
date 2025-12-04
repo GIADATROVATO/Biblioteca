@@ -100,7 +100,7 @@ public class LoanDAO {
 		 try (PreparedStatement stmt = conn.prepareStatement(sql)) {
 			 	stmt.setString(1, return_date );
 			 	stmt.setInt(2, loan_id);
-	            stmt.executeUpdate(); 
+	            stmt.executeUpdate();  
 	            System.out.println("data restituzione modificata");
 	    } catch (SQLException e) { e.printStackTrace(); }
 	}
